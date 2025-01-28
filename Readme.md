@@ -21,6 +21,29 @@ Hm_lpvt_1fff341d7a963a4043e858ef0e19a17c
 ```
 and from **Local Storage** collect ``userToken`` value part
 
+## http headers
+```sh
+headers={
+
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",
+    "Accept": "*/*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "X-Client-Platform": "web",
+    "X-Client-Version": "1.0.0-always",
+    "X-Client-Locale": "en_US",
+    "X-App-Version": "20241129.1",
+    "Authorization": "Bearer {userToken}", #collected from local storage
+    "Origin": "https://chat.deepseek.com", 
+    "Referer": "https://chat.deepseek.com/", #change to 'https://chat.deepseek.com/a/chat/s/{chatroom_id}' after chatroom creation
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=0",
+    "Te": "trailers",
+}
+```
+
 ## CodeFlow (sorta)
 1. Creating a chatroom
 ![create chatroom](assets/account.png)
@@ -28,5 +51,18 @@ and from **Local Storage** collect ``userToken`` value part
 2. Util Function ``create_pow_challenge``
 ![create_pow_challenge](assets/challenge_pow.png)
 
-3. Ai responses
+3. Ai responses\
 The api endpoint for this is ``/api/v0/chat/completion``
+
+    **First Message**
+    ![first_message](assets/first.png)
+
+    **Second Message**
+    ![second_message](assets/second.png)
+
+    **Third message and onwards**
+    ![third_message](assets/third.png)
+
+## Todo
+1. Scrape for file upload
+2. Code implementation in python
