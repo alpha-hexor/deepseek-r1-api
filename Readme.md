@@ -23,4 +23,4 @@ and from **Local Storage** collect ``userToken`` value part
 
 ## CodeFlow (sorta)
 1. Creating a chatroom
-![alt text](image.png)
+![alt text](assets/account.png)
