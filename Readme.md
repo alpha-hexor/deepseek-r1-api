@@ -23,4 +23,10 @@ and from **Local Storage** collect ``userToken`` value part
 
 ## CodeFlow (sorta)
 1. Creating a chatroom
-![alt text](assets/account.png)
+![create chatroom](assets/account.png)
+
+2. Util Function ``create_pow_challenge``
+![create_pow_challenge](assets/challenge_pow.png)
+
+3. Ai responses
+The api endpoint for this is ``/api/v0/chat/completion``
