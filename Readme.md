@@ -63,6 +63,15 @@ The api endpoint for this is ``/api/v0/chat/completion``
     **Third message and onwards**
     ![third_message](assets/third.png)
 
+    **File upload**
+    ![file_upload](assets/file_upload.png)
+
+    **Get file upload status**
+    ![file_upload](assets/file_status.png)
+
+    **Use the File id**\
+    Use the ``file_id`` in the ``ref_file_ids`` array in the post request
+
 ## Todo
-1. Scrape for file upload
-2. Code implementation in python
+~~1. Scrape for file upload~~\
+2. Code implementation in python.
